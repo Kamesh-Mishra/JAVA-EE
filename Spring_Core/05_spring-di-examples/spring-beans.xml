@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="product1" class="com.flipkart.Product">
+		<property name="id" value="1000"></property>
+		<property name="productName" value="Laptop"></property>
+		<property name="price" value="55555.00"></property>
+	</bean>
+
+
+	<!-- Mouse 3000.00 -->
+	<bean id="product2" class="com.flipkart.Product">
+
+		<property name="productName" value="Mouse"></property>
+		<property name="price" value="3000.00"></property>
+	</bean>
+
+
+	<!-- private String emailId; private float totalAmount; private boolean 
+		isOrderSuccess; private char foodType; private long mobileNumber; -->
+
+
+	<bean id="order1" class="com.flipkart.Order">
+
+		<property name="emailId" value="dilip@gmail.com]"></property>
+		<property name="totalAmount" value="4000.00"></property>
+		<property name="isOrderSuccess" value="True"></property>
+		<property name="foodType" value="N"></property>
+		<property name="mobileNumber" value="36636362364"></property>
+
+
+		<property name="foodItemNames">
+			<list>
+				<value>Chicken Biryani</value>
+				<value>Chicken Biryani</value>
+				<value>Sweet</value>
+				<value>Coke</value>
+			</list>
+		</property>
+
+
+		<property name="prices">
+			<list>
+				<value>400</value>
+				<value>45.99</value>
+				<value>45.99</value>
+				<value>333.00</value>
+			</list>
+		</property>
+
+
+	</bean>
+
+
+	<bean id="student1" class="com.flipkart.set.values.Student">
+		<property name="name" value="Dilip "></property>
+		<property name="subjects">
+			<set>
+				<value>Java</value>
+				<value>python</value>
+				<value>java</value>
+				<value>CPP</value>
+				<value>C</value>
+			</set>
+		
+		</property>
+		<property name="id" value=""></property>
+
+	</bean>
+
+
+
+
+
+
+
+</beans>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="student1" class="com.flipkart.set.values.Student">
+		<property name="name" value="Kamesh"></property>
+		<property name="subjects">
+			<set>
+				<value>Java</value>
+				<value>python</value>
+				<value>java</value>
+				<value>CPP</value>
+				<value>C</value>
+				<value>C</value>
+				<value>CPP</value>
+			</set>
+
+		</property>
+		<property name="id" value="1234"></property>
+
+	</bean>
+
+
+
+	<bean id="student2" class="com.flipkart.set.values.Student">
+		<property name="name" value="Naresh "></property>
+		<property name="subjects">
+			<set>
+				<value>Java</value>
+				<value>python</value>
+				<value>java</value>
+				<value>CPP</value>
+				<value>C</value>
+				<value>Java</value>
+			</set>
+		</property>
+		<property name="id" value="2222"></property>
+		<property name="subMarks">
+			<map>
+				<entry key="Java" value="99" />
+				<entry key="C" value="0" />
+				<entry key="CPP" value="33" />
+				<entry key="python" value="77" />
+				<entry key="Java" value="55" />
+			</map>
+		</property>
+	</bean>
+
+</beans>
