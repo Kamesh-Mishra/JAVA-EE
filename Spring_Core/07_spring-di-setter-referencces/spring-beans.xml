@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="student1"
+		class="com.kamesh.beans.setter.injection.Student">
+
+	</bean>
+
+	<bean id="student2"
+		class="com.kamesh.beans.setter.injection.Student">
+		<property name="id" value="3333"></property>
+		<property name="name" value="Suresh"></property>
+		<property name="mobileNumbers">
+			<list>
+				<value>4456789</value>
+				<value>4444444</value>
+				<value>4466677888</value>
+			</list>
+
+		</property>
+
+	</bean>
+
+	<bean id="college"	class="com.kamesh.beans.setter.injection.College">
+		<property name="clgName" value="XYZ Clg "></property>
+		<property name="student" ref="student2"></property>
+	</bean>
+	
+	<bean id="college2"	class="com.kamesh.beans.setter.injection.College">
+		<property name="student" ref="student1"></property>
+	</bean>
+
+
+
+</beans>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>  
+   
+   
+   
+    <bean id="employee1" class="com.kamesh.beans.UserDefinedCollections.Employee">  
+        <property name="name" value="John"></property>  
+        <property name="employeeID" value="211"></property>  
+        <property name="department" value="Penetration testing"></property>  
+    </bean>  
+   
+   
+     
+    <bean id="employee2" class="com.kamesh.beans.UserDefinedCollections.Employee">  
+        <property name="name" value="Max"></property>  
+        <property name="employeeID" value="212"></property>  
+        <property name="department" value="Ethical hacking"></property>  
+    </bean>  
+    
+    
+     
+        <bean id="company" class="com.kamesh.beans.UserDefinedCollections.Company">  
+        <property name="companyName" value="TCS"></property>  
+        <property name="employees">
+            <list>
+                 <ref bean="employee1"/>  
+                <ref bean="employee2"/> 
+             </list>
+         </property>
+    </bean>  
+</beans>  
