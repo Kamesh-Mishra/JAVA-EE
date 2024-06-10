@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="order" class="com.kamesh.orderes.Order">
+		<constructor-arg value="1001"></constructor-arg>
+		<constructor-arg value="Kamesh"></constructor-arg>
+		<constructor-arg value="true"></constructor-arg>
+		<constructor-arg value="V"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Poori</value>
+				<value>Dosa</value>
+				<value>Poori</value>
+				<value>Idly</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="order1" class="com.kamesh.orderes.Order">
+		<constructor-arg value="1001"/>
+		<constructor-arg value="Kamesh Mishra"></constructor-arg>
+		<constructor-arg value="true"></constructor-arg>
+		<constructor-arg value="V"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>Poori</value>
+				<value>Dosa</value>
+				<value>Poori</value>
+				<value>Idly</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>	
+			<map>
+				<entry   key="Idly" value="50"></entry>
+				<entry   key="Poori" value="55"></entry>
+				<entry   key="Dosa" value="33"></entry>
+				<entry   key="Biryani" value="250"></entry>
+			</map>
+		</constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>FullPlate</value>
+				<value>HalfPlate</value>
+				<value>MiniMeal</value>
+			</set>
+		</constructor-arg>
+	</bean>
+
+
+
+	 <bean id="menu" class="com.kamesh.orderes.Order">
+		<constructor-arg>
+			<list>
+				<value>Idly</value>
+				<value>Poori</value>
+				<value>Dosa</value>
+				<value>Biryani</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>	
+			<map>
+				<entry   key="Idly" value="50"></entry>
+				<entry   key="Poori" value="55"></entry>
+				<entry   key="Dosa" value="33"></entry>
+				<entry   key="Biryani" value="250"></entry>
+			</map>
+		
+		</constructor-arg>
+
+	</bean>
+
+
+
+</beans>
